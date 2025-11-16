@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=device-width, initial-scale=1.0">
+    <title>Smoothie Machine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1> Smoothie Machine</h1>
+
+    <form id="smoothieForm">
+        <label>Customer Name</label>
+        <input type="text" id="customerName" required>
+
+        <label>Choose Base</label>
+        <select id="base">
+            <option value="Milk" data-price="1.50">Milk ($1.50)</option>
+            <option value="Almond Milk" data-price="2.00">Almond Milk ($2.00)</option>
+            <option value="Yogurt" data-price="2.50">Yogurt ($2.50)</option>
+            <option value="Water" data-price="0.50">Water ($0.50)</option>
+        </select>
+
+        <label>Ingredients (Choose any)</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" value="Banana" data-price="1.00"> Banana ($1)</label>
+            <label><input type="checkbox" value="Strawberry" data-price="1.25"> Strawberry ($1.25)</label>
+            <label><input type="checkbox" value="Mango" data-price="1.50"> Mango ($1.50)</label>
+            <label><input type="checkbox" value="Blueberry" data-price="1.75"> Blueberry ($1.75)</label>
+            <label><input type="checkbox" value="Protein Powder" data-price="2.00"> Protein Powder ($2)</label>
+        </div>
+
+        <label>Sweetness Level</label>
+        <select id="sweetness">
+            <option value="No Sugar">No Sugar</option>
+            <option value="Low Sugar">Low Sugar</option>
+            <option value="Medium Sugar">Medium Sugar</option>
+            <option value="High Sugar">High Sugar</option>
+        </select>
+
+        <button type="submit">Order Smoothie</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
