@@ -1,28 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
-    background: #fef5ea;
+    background: #fdf3e7;
     padding: 20px;
     color: #333;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 32px;
     color: #d35400;
+    margin-bottom: 20px;
 }
 
 form {
-    background: white;
-    padding: 20px;
+    background: #ffffff;
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 25px;
     border-radius: 12px;
-    max-width: 500px;
-    margin: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
 label {
     display: block;
-    margin-top: 10px;
+    margin-top: 12px;
     font-weight: bold;
 }
 
@@ -30,37 +38,38 @@ input, select {
     width: 100%;
     padding: 10px;
     margin-top: 6px;
-    border-radius: 6px;
     border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
 }
 
 .checkbox-group label {
+    font-weight: normal;
+    margin-top: 6px;
     display: block;
-    margin: 6px 0;
 }
 
 button {
     width: 100%;
     padding: 12px;
-    margin-top: 15px;
-    background: #d35400;
+    margin-top: 20px;
+    background: #e67e22;
+    border: none;
     color: white;
     font-size: 18px;
-    border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #e67e22;
+    background: #d35400;
 }
 
 #output {
-    margin-top: 30px;
     background: #fff;
+    max-width: 450px;
+    margin: 30px auto 0;
     padding: 20px;
     border-radius: 12px;
-    max-width: 500px;
-    margin: 30px auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
